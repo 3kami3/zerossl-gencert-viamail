@@ -1,10 +1,10 @@
-Description
+## Description
 This is a BASH script to create and get a ZeroSSL server certificate via REST API. It is used to set up a script that performs domain validation via email.
 
-What it does
+## What it does
 After creating a CSR file, this script requests certificate creation via the REST API. Specify domain validation by email. The domain verification is then performed based on the received email. After successful domain verification, it gets the generated server certificate.
 
-Running the installer
+## Running the installer
 ```
 sudo useradd -s /sbin/nologin certbot
 sudo sh -c "echo 'default_privs = certbot' >> /etc/postfix/main.cf
